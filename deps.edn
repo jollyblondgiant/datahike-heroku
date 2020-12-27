@@ -1,0 +1,14 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.1"}
+
+        ;; http
+        ring/ring-jetty-adapter {:mvn/version "1.8.2"}
+
+        ;; database
+        io.replikativ/datahike            {:mvn/version "0.3.2"}
+        io.replikativ/datahike-postgres   {:mvn/version "0.1.0"}}
+
+ :aliases {:depstar
+           {:replace-deps {seancorfield/depstar {:mvn/version "2.0.160"}}
+            :ns-default hf.depstar
+            :exec-args {}}}}
