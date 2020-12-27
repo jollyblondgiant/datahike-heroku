@@ -20,7 +20,7 @@
                    (d/db (:conn @app-state)))]
     {:status  200
      :headers {"Content-Type" "text/html"}
-     :body    (str "Todo items: <br/>" (str/join "<br/>" todos))}))
+     :body    (str "Todo: <br/>" (str/join "<br/>" todos))}))
 
 (def app
   "The application's main ring handler which is passed to the web server"
