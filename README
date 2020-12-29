@@ -18,3 +18,10 @@ heroku config:set CLOJURE_CLI_VERSION=1.10.1.763
 deploy app to heroku:
 git push heroku HEAD:main
 => https://quiet-gorge-91765.herokuapp.com/
+
+run REPL:
+heroku run lein repl
+couldn't find project.clj, which is needed for classpath
+Unrecognized option: --repl
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
